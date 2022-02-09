@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-    pull_request:
+  pull_request:
 
 jobs:
   build:
@@ -16,10 +16,23 @@ jobs:
           node-version: 16
 
       - name: Setup mocha-responsive
-        run:
+        run: |
           mkdir mocha-responsive && cd mocha-responsive
-          git clone https://github.com/nahsi/jsonresume-theme-mocha-responsive .
+          git clone \
+            https://github.com/nahsi/jsonresume-theme-mocha-responsive .
           npm install
 
       - name: Install kissmyresume
         run: npm install -g kiss-my-resume
+
+      - name: Build resume
+        run: |
+          kissmyresume build resume.json -t mocha-responsive -f html -n index
+
+      - name: Deploy
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          cname: "resume.nahsi.dev"
+          publish_dir: "./out"

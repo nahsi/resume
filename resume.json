@@ -1,0 +1,208 @@
+{
+  "basics": {
+    "name": "Anatoly Laskaris",
+    "label": "DevOps/SRE",
+    "picture": "https://s3.nahsi.dev/resume/photo.jpg",
+    "website": "https://nahsi.dev",
+    "summary": "Die-hard HashiCorp fan, Gentoomen, and self-hosted enthusiast (I have my own rack:) ♥ Open-source, modern tools, pretty UIs ♥",
+    "email": "hello@nahsi.dev",
+    "location": {
+      "city": "Kazan",
+      "countryCode": "RU",
+      "region": "Tatarstan"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "nahsi",
+        "url": "https://github.com/nahsi"
+      },
+      {
+        "network": "Telegram",
+        "username": "nahsi_at_tg",
+        "url": "https://t.me/nahsi_at_tg"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "anatolylaskaris",
+        "url": "https://linkedin.com/in/anatolylaskaris"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Cinarra",
+      "position": "DevOps/SRE",
+      "website": "https://cinarra.com",
+      "startDate": "2019-05-15",
+      "summary": "Antiquated infrastructure refactoring in the cloud (AWS) and in an on-premise environment with no direct access.",
+      "highlights": [
+        "Containerization",
+        "Service discovery with Consul",
+        "Infrastructure as a code using Ansible, Packer, Nomad and Terraform",
+        "Observability with VictoriaMetrics and Grafana Loki",
+        "CI/CD with GitHub Actions",
+        "Personal PR based dev environment with HashiTools",
+        "Secret management with Vault"
+      ]
+    },
+    {
+      "company": "Synesis",
+      "position": "NOC Engineer",
+      "website": "https://synesis-group.com",
+      "startDate": "2018-12",
+      "endDate": "2019-05",
+      "summary": "L1 troubleshooting, incident management and some QA",
+      "highlights": [
+        "Automation of web application tests with python-selenium"
+      ]
+    },
+    {
+      "company": "ICL Services/Fujistu Russia GDC",
+      "website": "https://icl-services.com",
+      "position": "Unix support",
+      "startDate": "2018-06",
+      "endDate": "2018-09",
+      "summary": "Support of ~800 major UK retailer sites running UnixWare",
+      "highlights": [
+        "\"Have you tried turning it off and on again?\"",
+        "Conversations about stuck backup tapes"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Far Eastern Federal University",
+      "area": "History",
+      "studyType": "Bachelor",
+      "startDate": "2012",
+      "endDate": "2014"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud",
+      "keywords": [
+        "AWS",
+        "Linode",
+        "HashiStack"
+      ]
+    },
+    {
+      "name": "Infrastructure as Code",
+      "keywords": [
+        "Terraform",
+        "Ansible",
+        "Nomad",
+        "Packer"
+      ]
+    },
+    {
+      "name": "(Sorta) databases",
+      "keywords": [
+        "ClickHouse",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "name": "Observability",
+      "keywords": [
+        "Grafana",
+        "Prometheus",
+        "VictoriaMetrics",
+        "Loki",
+        "Telegraf"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "keywords": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Scripting",
+      "keywords": [
+        "bash",
+        "Ansible"
+      ]
+    },
+    {
+      "name": "Distros",
+      "keywords": [
+        "Gentoo",
+        "Ubuntu",
+        "CentOS"
+      ]
+    },
+    {
+      "name": "Misc",
+      "keywords": [
+        "Docker/Podman",
+        "Traefik",
+        "Vagrant",
+        "Deno",
+        "ZFS"
+      ]
+    },
+    {
+      "name": "Dreaded technologies",
+      "keywords": [
+        "Kubernetes",
+        "Helm",
+        "NodeJS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Lower Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "IT",
+      "keywords": [
+        "Self-hosting/Homelab",
+        "Open-source"
+      ]
+    },
+    {
+      "name": "History",
+      "keywords": [
+        "Antiquity",
+        "Socio-economics"
+      ]
+    },
+    {
+      "name": "Languages",
+      "keywords": [
+        "Language acquisition",
+        "Romance and Germanic languages"
+      ]
+    },
+    {
+      "name": "Cinema",
+      "keywords": [
+        "Britcoms",
+        "Old movies"
+      ]
+    },
+    {
+      "name": "Sport",
+      "keywords": [
+        "Swimming",
+        "Fitness"
+      ]
+    }
+  ]
+}
