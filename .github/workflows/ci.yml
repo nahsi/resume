@@ -1,0 +1,25 @@
+name: Publish resume
+
+on:
+  push:
+    branches:
+      - master
+    pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Setup mocha-responsive
+        run:
+          mkdir mocha-responsive && cd mocha-responsive
+          git clone https://github.com/nahsi/jsonresume-theme-mocha-responsive .
+          npm install
+
+      - name: Install kissmyresume
+        run: npm install -g kiss-my-resume
