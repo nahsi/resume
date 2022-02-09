@@ -18,7 +18,8 @@ jobs:
       - name: Setup mocha-responsive
         run: |
           mkdir mocha-responsive && cd mocha-responsive
-          git clone https://github.com/nahsi/jsonresume-theme-mocha-responsive .
+          git clone -b play-with-colors \
+            https://github.com/nahsi/jsonresume-theme-mocha-responsive .
           npm install
 
       - name: Install kissmyresume
