@@ -30,6 +30,7 @@ jobs:
           kissmyresume build resume.json -t mocha-responsive -f html -n index
 
       - name: Deploy
+        if: ${{ github.ref == 'refs/heads/main' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
