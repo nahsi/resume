@@ -25,4 +25,10 @@ jobs:
         run: npm install -g kiss-my-resume
 
       - name: Build resume
-        run: kissmyresume build resume.json -t mocha-responsive -f html
+        run: |
+          kissmyresume build resume.json -t mocha-responsive -f html -n index
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./out
