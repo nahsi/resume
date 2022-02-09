@@ -23,3 +23,6 @@ jobs:
 
       - name: Install kissmyresume
         run: npm install -g kiss-my-resume
+
+      - name: Build resume
+        run: kissmyresume build resume.json -t mocha-responsive -f html
