@@ -1,0 +1,956 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	<title>Matthias Kretschmann</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+	<style>
+		/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+
+body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background: #393e46;
+    /* background: #f8f8f8; */
+    /* margin: 50px 0 100px; */
+    margin: 0;
+    letter-spacing: .3px;
+    color: #39424B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px; }
+
+h2 {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .5px; }
+
+h3 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .4px;
+    padding-top: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+h3.bold {
+    font-weight: 700; }
+
+h4 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+h4.bold {
+    font-weight: 700; }
+
+h5 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 11px; }
+h5.italic {
+    font-style: italic; }
+
+h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 11px; }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover, a:hover > i.fa-external-link, .info-tag-container a:hover .fa.fa-external-link {
+    color: #2895F1;
+}
+
+a .fa-external-link {
+    font-size: 8px;
+    margin-left: 2px;
+    vertical-align: text-top;
+    color: #999;
+}
+
+p, li {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: .4px;
+}
+
+blockquote {
+    font-size: 11px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px 25px; }
+
+em {
+    color: #999;
+}
+
+ul {
+    margin: 10px 0 0;
+    -webkit-padding-start: 25px;
+}
+
+ul li {
+    padding-left: 10px;
+}
+
+ul.minimal {
+    list-style: none;
+    padding: 0;
+}
+
+ul.minimal li {
+    margin-bottom: 3px;
+    padding-left: 0;
+}
+
+ul.two-column {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 28px;
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 28px;
+    column-gap: 28px;
+}
+
+ul.two-column li {
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+
+@page {
+    size: A4;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.keyline {
+    width: 45px;
+    /* margin: 8px 0 10px; */
+    margin: 4px 0 10px;
+    border-top: 1px solid #FF5701;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+.profile-header {
+    width: auto;
+    max-width:  300px;
+    margin-right: 50px;
+}
+*/
+
+/*
+.profile-pic {
+    width: auto;
+    max-width: 800px;
+    margin-right: auto;
+    /* margin-top: -5px; */
+    /* margin-right: 18px; *//*
+}
+*/
+
+.profile-pic img {
+    height: 150px;
+    width: 120px;
+    border-radius: 10%;
+    padding: 2px;
+    border: 2px solid #FF5701;
+    object-fit: cover;
+    background: #FFFFFF;
+    float: right;
+}
+
+.summary {
+    margin: 5px 0 5px; }
+
+/* Layouts */
+.page {
+    background: #222831;
+    color: #eeeeee;
+    /* width: 612px; */
+    min-height: 792px;
+    display: block;
+    margin: 0 auto;
+    border-top: 10px solid #FF5701;
+    /* padding: 36px 22px 30px 34px; */
+    padding: 50px; /* 50px calc(50px + 10%);*/
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-column, .profile-header {
+    float: left;
+    /* width: 160px; */
+    width: 300px;
+    /* margin-right: 20px; */
+    margin-right: 50px;
+    word-wrap: break-word;
+}
+
+.right-column, .profile-pic {
+    width: auto;
+    overflow: hidden;
+    max-width: 850px;
+    /* margin-right: 50px; */
+    margin: 0 auto;
+}
+
+.item {
+    /* margin-bottom: 15px; */
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #393e46;
+}
+
+.item:first-child, .title + .item {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.title {
+    background-color: #393e46;
+}
+
+.title > i {
+    float: left;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.right-column > .container > .title {
+    margin-bottom: 15px;
+}
+
+.gpa {
+    border: 1px solid #FFFFFF;
+    border-radius: 35%;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .page {
+        padding: 35px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin: 0;
+    }
+
+    .skills-container > section > ul > li
+    /*,.languages-container > ul > li */{
+        display: inline;
+    }
+
+    .skills-container > section > ul > li > h6
+    /*,.languages-container > ul > li > h6 */{
+        padding-right: 10px;
+        display: inline;
+    }
+
+    .info-tag-container .info-text {
+        font-size: 14px !important;
+    }
+
+    h3 {
+        font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 14px !important;
+    }
+
+    h6 {
+        font-size: 12px !important;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .item {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+        background: #FFFFFF;
+        color: #000;
+    }
+
+    main {
+        background: #FFFFFF !important;
+        color: black !important;
+    }
+
+    @page {
+        border-top: 2px solid #FFFFFF;
+    }
+
+    .page {
+        color: #000;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 35px 0 35px; /* 35px  35px; */
+        box-shadow: none;
+    }
+
+    .title {
+        background-color: #393e46;
+        color: #FFFFFF;
+        page-break-inside: avoid;
+    }
+
+    .keyline {
+        width: 45px;
+        /* margin: 8px 0 10px; */
+        margin: 4px 0 10px;
+        border-top: 2px solid #FF5701;
+    }
+
+    .page .resume-header,
+    .page .resume-content {
+        padding: 0 35px 0 35px;
+    }
+
+    .container > section {
+        page-break-inside: avoid;
+    }
+
+    .left-column {
+        width: 250px;
+        margin-right: 35px;
+    }
+
+    .left-column .container {
+        page-break-inside: avoid;
+    }
+
+    .fa-external-link {
+        display: none;
+    }
+
+    .gpa {
+        border: 1px solid #393e46;
+        margin-left: 10px;
+    }
+}
+
+/* Components */
+.info-tag-container {
+    margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+    font-size: 14px;
+    width: 12px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+    font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+    font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+    font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+    font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+    width: auto;
+    font-size: 8px;
+    margin-left: 2px;
+    vertical-align: text-top;
+    color: #999;
+}
+
+.info-tag-container .info-text {
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    /* width: 139px; */
+}
+
+.references-container .fa {
+    font-size: 14px;
+}
+
+	</style>
+	</head>
+	<body>
+		<main id="resume" class="page">
+			<header class="resume-header clearfix">
+			    <div class="profile-header">
+			        <h1 class="display-block">Matthias Kretschmann</h1>
+			        <h2 class="display-block">Designer &amp; Developer</h2>
+			    </div>
+			    <div class="profile-pic">
+			        <img src="https://avatars.githubusercontent.com/u/28529663" alt="profile-pic">
+			    </div>
+			</header>
+			<div class="resume-content">
+				<aside class="left-column">
+					<div class="container about-container">
+					    <div class="title">
+					        <h3>About</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <div class="info-tag-container">
+					                    <i class="fa fa-map-marker"></i>
+					        
+					                <h6 class="info-text">Berlin</h6>
+					        </div>
+					
+					        <div class="info-tag-container">
+					                    <i class="fa fa-envelope"></i>
+					        
+					                <h6 class="info-text">m@kretschmann.io</h6>
+					        </div>
+					
+					
+					        <div class="info-tag-container">
+					                    <i class="fa fa-desktop"></i>
+					        
+					                <h6 class="info-text">
+					                    <a href="https://matthiaskretschmann.com" target="_blank">
+					                        matthiaskretschmann.com <i class="fa fa-external-link" aria-hidden="true"></i>
+					                    </a>
+					                </h6>
+					        </div>
+					
+					                         <div class="info-tag-container">
+					                                     <i class="fa fa-twitter"></i>
+					                         
+					                                 <h6 class="info-text">
+					                                     <a href="https://twitter.com/kremalicious" target="_blank">
+					                                         kremalicious <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                     </a>
+					                                 </h6>
+					                         </div>
+					                         <div class="info-tag-container">
+					                                     <i class="fab fa-github"></i>
+					                         
+					                                 <h6 class="info-text">
+					                                     <a href="https://github.com/kremalicious" target="_blank">
+					                                         kremalicious <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                     </a>
+					                                 </h6>
+					                         </div>
+					</div>
+					    <div class="skills-container">
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Design</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Product Design</h6></li>
+					                            <li><h6>Service Design</h6></li>
+					                            <li><h6>Interface Design</h6></li>
+					                            <li><h6>User Experience Design</h6></li>
+					                            <li><h6>Communication Design</h6></li>
+					                            <li><h6>Interaction Design</h6></li>
+					                            <li><h6>Information Architecture</h6></li>
+					                            <li><h6>Icon Design</h6></li>
+					                            <li><h6>Web Design</h6></li>
+					                            <li><h6>Typography</h6></li>
+					                            <li><h6>Design management</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Web Development</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>HTML</h6></li>
+					                            <li><h6>CSS</h6></li>
+					                            <li><h6>Javascript</h6></li>
+					                            <li><h6>Node.js</h6></li>
+					                            <li><h6>npm ecosystem</h6></li>
+					                            <li><h6>SASS/SCSS</h6></li>
+					                            <li><h6>Less</h6></li>
+					                            <li><h6>Stylus</h6></li>
+					                            <li><h6>Gulp</h6></li>
+					                            <li><h6>Gatsby</h6></li>
+					                            <li><h6>React</h6></li>
+					                            <li><h6>Styled Components</h6></li>
+					                            <li><h6>JAMstack</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>General Software Development</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Git</h6></li>
+					                            <li><h6>GitHub</h6></li>
+					                            <li><h6>Bash</h6></li>
+					                            <li><h6>UNIX</h6></li>
+					                            <li><h6>Agile: Kanban &amp; Scrum</h6></li>
+					                            <li><h6>Prototyping</h6></li>
+					                            <li><h6>Incremental</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>DevOps</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					                    <h4 class="bold">Intermediate</h4>
+					                    <ul class="minimal">
+					                            <li><h6>AWS</h6></li>
+					                            <li><h6>Now</h6></li>
+					                            <li><h6>Serverless</h6></li>
+					                            <li><h6>Cloudflare</h6></li>
+					                            <li><h6>NGINX</h6></li>
+					                            <li><h6>Apache</h6></li>
+					                    </ul>
+					            </section>
+					    </div>
+					    <div class="container languages-container">
+					        <div class="title">
+					            <h3>Languages</h3>
+					            <div class="keyline"></div>
+					        </div>
+					
+					        <ul class="minimal">
+					                <li>
+					                    <h6>English <em class="pull-right ">(Advanced speaker)</em></h6>
+					                </li>
+					                <li>
+					                    <h6>German <em class="pull-right ">(Native speaker)</em></h6>
+					                </li>
+					        </ul>
+					    </div>
+				</aside>
+				<div class="right-column">
+					<div class="container work-container">
+					    <div class="title">
+					            <i class="fa fas fa-user-tie"></i>
+					        <h3>Experience</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://oceanprotocol.com" target="_blank">
+					                            Ocean Protocol Foundation <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2017</span>
+					                            <span class="endDate"> - Present</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Lead UI Designer &amp; Developer</h4>
+					
+					            <p class="summary">Co-Founded the Ocean Protocol project and as a core developer leading the execution of [multiple user interfaces](/oceanprotocol) and core components.
+					
+					In general, leading the UI design & development of Ocean Protocol's user interfaces, iterating on a components-based UI design system spanning all of Ocean Protocol's web properties. This also includes the conceptualization, execution and iteration of the creative and visual direction of the Ocean Protocol visual brand.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://bigchaindb.com" target="_blank">
+					                            BigchainDB GmbH <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/12/2016</span>
+					                            <span class="endDate"> - 31/12/2018</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Lead UI Designer &amp; Developer</h4>
+					
+					            <p class="summary">Leading the UI design & development of all BigchainDB web properties. I created the initial BigchainDB brand and further conceptualized, executed and iterated on the creative and visual direction of BigchainDB. This included creating and iterating on a components-based UI design system for all of [BigchainDB's user interfaces](/bigchaindb).</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://ascribe.io" target="_blank">
+					                            ascribe GmbH <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2016</span>
+					                            <span class="endDate"> - 31/12/2017</span>
+					                </h5>
+					            </div>
+					
+					            <h4>UI Designer &amp; Developer</h4>
+					
+					            <p class="summary">Leading the technical architecture of ascribe's web presence, and maintaining the front-end of the product.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://chartmogul.com" target="_blank">
+					                            ChartMogul Ltd. <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">15/07/2015</span>
+					                            <span class="endDate"> - 01/02/2017</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Lead UI Engineer</h4>
+					
+					            <p class="summary">Co-designing and leading the UI design & development of various [ChartMogul web properties](/chartmogul), helping the company to position itself as a market leader. This included the creation of a components-based UI design system and implementing it across all web touch points.
+					
+					Besides designing and implementing new features, I maintained the front-end of the ChartMogul application and implemented the UI design system by refactoring most of its front-end codebase.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://sharethemeal.org" target="_blank">
+					                            UN World Food Programme/ShareTheMeal <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/10/2014</span>
+					                            <span class="endDate"> - 01/06/2015</span>
+					                </h5>
+					            </div>
+					
+					            <h4>UI Engineer</h4>
+					
+					            <p class="summary">Leading the creation of the [website for ShareTheMeal](/sharethemeal) and assisting in building and consulting for the iOS and Android app.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://ezeep.com" target="_blank">
+					                            ezeep GmbH <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2012</span>
+					                            <span class="endDate"> - 01/09/2014</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Lead Designer &amp; Front End Developer</h4>
+					
+					            <p class="summary">Creating an unprecedented, market-leading & award-winning user experience around printing based on the principles of emotional design way ahead of all competitors.
+					
+					This included defining the product based on user & market research in an iterative process and designing & building [ezeep’s numerous touch points](/ezeep), like the web app, web site, desktop apps for Windows & Mac OS X and apps for iOS & Android.
+					
+					On top of that I created the corporate identity and a consistent visual branding, including the logo.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/02/2009</span>
+					                            <span class="endDate"> - 01/01/2012</span>
+					                </h5>
+					            </div>
+					
+					            <h4>UI/UX Designer &amp; Front End Developer</h4>
+					
+					            <p class="summary">Conceptualizing & implementing [numerous in-house and public facing interfaces](/unihalle) for thousands of students and staff. Additionally, conceptualizing, creating and maintaining the blog network & community for all students & staff.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Harz University of Applied Sciences
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/02/2011</span>
+					                            <span class="endDate"> - 01/05/2011</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Consultant &amp; Teacher</h4>
+					
+					            <p class="summary">Conceptualizing a web design & development university seminar and building a [responsive & fluid grid framework](https://github.com/kremalicious/hsresponsive) with a basic HTML/CSS template for students of Media Informatics at the Harz University of Applied Sciences to learn and use.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Martin Luther University Halle-Wittenberg
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/02/2011</span>
+					                            <span class="endDate"> - 01/05/2011</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Consultant &amp; Teacher</h4>
+					
+					            <p class="summary">Conceptualizing a WordPress-based web design university seminar and building a minimal starting theme for students of media & communication science at the MLU Halle-Wittenberg to learn and use.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Shortmoves
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2009</span>
+					                            <span class="endDate"> - 01/01/2010</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Web Designer &amp; Developer</h4>
+					
+					            <p class="summary">Creating & managing the web presence and marketing material of the International Shortfilm Festival Shortmoves in Halle (Saale), Germany.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Agentur Ahron
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2005</span>
+					                            <span class="endDate"> - 31/12/2008</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Co-Founder &amp; Photojournalist &amp; Photographer</h4>
+					
+					            <p class="summary">Co-founded and built up a photo agency from the ground up and worked as a photographer ranging from journalistic works for news agencies & newspapers to photographic work for private clients.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Freelance
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2004</span>
+					                            <span class="endDate"> - Present</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Designer &amp; Developer</h4>
+					
+					            <p class="summary">Numerous projects and clients as a UI/UX Designer, Front End Developer, Icon Designer & Photographer.</p>
+					
+					        </section>
+					</div>
+					<div class="container education-container">
+					    <div class="title">
+					            <i class="fa fas fa-user-graduate"></i>
+					        <h3>Education</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Self-taught
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/1999</span>
+					                            <span class="endDate"> - 01/01/2004</span>
+					                </h5>
+					            </div>
+					
+					            <h4 class="display-inline">Autodidactic - UI Design &amp; Web Development</h4>
+					
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Martin Luther University Halle-Wittenberg
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2008</span>
+					                            <span class="endDate"> - 01/01/2012</span>
+					                </h5>
+					            </div>
+					
+					            <h4 class="display-inline">Bachelor of Arts - Media/Communication Science &amp; Art History</h4>
+					
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Martin Luther University Halle-Wittenberg
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/01/2006</span>
+					                            <span class="endDate"> - 01/01/2008</span>
+					                </h5>
+					            </div>
+					
+					            <h4 class="display-inline">Magister Artium - Political Science &amp; Sociology</h4>
+					
+					
+					        </section>
+					</div>
+					<div class="container awards-container">
+					    <div class="title">
+					            <i class="fa fas fa-award"></i>
+					        <h3>Awards</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        German Design Award
+					                </h3>
+					                <h5 class="italic pull-right">
+					                </h5>
+					            </div>
+					
+					            <h5 class="awarder">ezeep GmbH</h5>
+					
+					            <p class="summary">Nominated in the category _Interactive User Experience (Excellent Communications Design)_</p>
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        CeBIT Preview Award
+					                </h3>
+					                <h5 class="italic pull-right">
+					                </h5>
+					            </div>
+					
+					            <h5 class="awarder">ezeep GmbH</h5>
+					
+					        </section>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
