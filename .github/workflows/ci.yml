@@ -16,7 +16,7 @@ jobs:
           node-version: 16
 
       - name: Setup mocha-responsive
-        run:
+        run: |
           mkdir mocha-responsive && cd mocha-responsive
           git clone https://github.com/nahsi/jsonresume-theme-mocha-responsive .
           npm install
