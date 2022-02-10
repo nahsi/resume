@@ -35,14 +35,14 @@
       "position": "DevOps/SRE",
       "website": "https://cinarra.com",
       "startDate": "2019-05-15",
-      "summary": "Big Data analytics for the third biggest telecom provider in Japan (location based advertisement).\n\nAntiquated infrastructure **refactoring** in the cloud (AWS) and in an on-premise environment (~100 very beefy hosts) with no direct access.\n\nI've joined Cinarra as a junior DevOps and snowballed into a Super Start in 3 years, thanks to the incredible, talented Cinarra folks and unique challenges Softbank provided.\n\nI gave back. Cinarra gained a modern, scalable, available and resilient infrastructure with best in class monitoring, configuration in code and automatic deployments.\n\nDuring my time in Cinarra, DevOps team implemented:",
+      "summary": "Big Data analytics for the third biggest telecom provider in Japan (location based advertisement).\n\nAntiquated infrastructure **refactoring** in the cloud (AWS) and in an on-premise environment (~100 very beefy hosts) with no direct access.\n\nI've joined Cinarra as a junior DevOps and snowballed into a Super Start in 3 years, thanks to the incredible, talented Cinarra folks and unique challenges Softbank provided.\n\nI gave back.\n\nDuring my time in Cinarra, DevOps team implemented:",
       "highlights": [
         "Infrastructure as a code using Ansible, Packer, Nomad and Terraform",
         "Containerization",
-        "Service discovery with Consul - NO to hardcoded IP addresses, YES to DNS load-balancing",
-        "Observability with VictoriaMetrics and Grafana Loki - metrics and logs in one place with almost zero operational costs",
-        "CI/CD with GitHub Actions - using self-hosted workers",
-        "Personal PR based dev environment - Packer, Ansible, Terraform and some bash magic to create a dev environment that everyone can use",
+        "Service discovery with Consul - DNS load-balancing",
+        "Observability with VictoriaMetrics and Grafana Loki - metric and logs in one place with almost zero operational costs",
+        "CI/CD with GitHub Actions using self-hosted runners",
+        "Personal PR based dev environment that everyone can use",
         "Secret management with Vault - short lived unique credentials, policy based access and painless mTLS"
       ]
     },
@@ -147,9 +147,7 @@
         "Vagrant",
         "Deno",
         "mTLS",
-        "Shift Left",
-        "Zero Trust",
-        "Orchestration"
+        "Shift Left/Zero Trust"
       ]
     },
     {
