@@ -4,7 +4,7 @@
     "label": "DevOps/SRE",
     "picture": "https://s3.nahsi.dev/resume/photo.jpg",
     "website": "https://nahsi.dev",
-    "summary": "Die-hard HashiCorp fan, Gentoomen, and self-hosted enthusiast (I have my own rack:) ♥ Open-source, modern tools, pretty UIs ♥",
+    "summary": "Experienced Linux magician, workaholic, and a perfectionist with a passion for technology.\n\nI engineer, implement and maintain resilient highly available infrastructures (cloud and on-premise) using open-source tools and the very best of practices. I'm a big HashiCorp fan and if you use and love Consul, Nomad, Vault or Terraform like I do we will become friends ♥\n\nI'm also a Gentooman and have a homelab of 6 gentoo boxes running in 3 DC build and managed by Ansible.\n\nI'm looking to become a better programmer and feel genuinely excited about the possibility of writing in golang or rust in my work time.",
     "email": "hello@nahsi.dev",
     "location": {
       "city": "Kazan",
@@ -35,15 +35,15 @@
       "position": "DevOps/SRE",
       "website": "https://cinarra.com",
       "startDate": "2019-05-15",
-      "summary": "Antiquated infrastructure refactoring in the cloud (AWS) and in an on-premise environment with no direct access.",
+      "summary": "Antiquated infrastructure **refactoring** in the cloud (AWS) and in an on-premise environment (~100 very beefy hosts) with no direct access.\n\nI've joined Cinarra as a junior DevOps and snowballed into a Super Start in 3 years, thanks to the amazing and talented Cinarra folks.\n\nAnd I gave back. Cinarra gained a modern scalable, available and resilient infrastructure with best in class monitoring, configuration in code and automatic deployments.\n\nIn my time in Cinarra, DevOps team implemented:",
       "highlights": [
-        "Containerization",
-        "Service discovery with Consul",
         "Infrastructure as a code using Ansible, Packer, Nomad and Terraform",
-        "Observability with VictoriaMetrics and Grafana Loki",
-        "CI/CD with GitHub Actions",
-        "Personal PR based dev environment with HashiTools",
-        "Secret management with Vault"
+        "Containerization - goodbye rpm, hello docker",
+        "Service discovery with Consul - NO to hardcoded IP addresses, YES to DNS load-balancing",
+        "Observability with VictoriaMetrics and Grafana Loki - metrics and logs (and traces) in one beautiful Grafana:) with almost zero operational costs (ElasticSearch, I'm looking at you)",
+        "CI/CD with GitHub Actions - using self-hosted workers",
+        "Personal PR based dev environment - Packer, Ansible, Terraform and some bash magic to create a dev environment that everyone can use (devs, QA, management)",
+        "Secret management with Vault - NO to secrets in configuration files, YES to short lived unique credentials and policy based access. mTLS is a breeze now"
       ]
     },
     {
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "company": "ICL Services/Fujistu Russia GDC",
+      "company": "ICL Services/Fujitsu Russia GDC",
       "website": "https://icl-services.com",
       "position": "Unix support",
       "startDate": "2018-06",
@@ -138,11 +138,15 @@
     {
       "name": "Misc",
       "keywords": [
-        "Docker/Podman",
         "Traefik",
+        "Docker/Podman",
+        "ZFS",
         "Vagrant",
         "Deno",
-        "ZFS"
+        "mTLS",
+        "Shift Left",
+        "Zero Trust",
+        "Orchestration"
       ]
     },
     {
