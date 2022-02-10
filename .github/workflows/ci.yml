@@ -26,11 +26,14 @@ jobs:
         run: npm install -g kiss-my-resume
 
       - name: Build resume
+        env:
+          RENDER_MARKDOWN: true
+          PROCESS_IMAGE: true
         run: |
           kissmyresume build resume.json -t mocha-responsive -f html -n index
 
       - name: Deploy
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
