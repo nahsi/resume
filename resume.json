@@ -31,10 +31,29 @@
   },
   "work": [
     {
+      "company": "Fluence Labs",
+      "position": "DevOps",
+      "website": "https://fluence.network",
+      "startDate": "2022-06-15"
+    },
+    {
+      "company": "Homelab",
+      "website": "https://nahsi.dev",
+      "startDate": "2021-01-01",
+      "summary": "Managing my own quite advanced homelab/self-hosting Gentoo based infrastructure.",
+      "highlights": [
+        "Getting my hands dirty with hardware and networking",
+        "Playing with distributed storage (~50 TB in Ceph now)",
+        "Making myself free of evil data collecting corporations",
+        "Crying when my self-hosted mail server died and I can't function because of that"
+      ]
+    },
+    {
       "company": "Cinarra",
       "position": "DevOps/SRE",
       "website": "https://cinarra.com",
       "startDate": "2019-05-15",
+      "endDate": "2022-07-23",
       "summary": "Big Data analytics for the third biggest telecom provider in Japan (location based advertisement).\n\nAntiquated infrastructure **refactoring** in the cloud (AWS) and in an on-premise environment (~100 very beefy hosts) with no direct access.\n\nI've joined Cinarra as a junior DevOps and snowballed into a Super Start in 3 years, thanks to the incredible, talented Cinarra folks and unique challenges SoftBank provided.\n\nI gave back. Cinarra gained a modern, scalable, highly available and resilient infrastructure with best in class monitoring, configuration in code and automatic deployments.\n\nDuring my time in Cinarra, I've implemented:",
       "highlights": [
         "Infrastructure as a code using Ansible, Packer, Nomad and Terraform",
@@ -164,7 +183,8 @@
         "Mail stack (WildDuck)",
         "Vagrant",
         "mTLS",
-        "Ubiquiti"
+        "Ubiquiti",
+        "Opnsense"
       ]
     },
     {
