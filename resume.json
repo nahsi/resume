@@ -2,9 +2,9 @@
   "basics": {
     "name": "Anatoly Laskaris",
     "label": "DevOps/SRE",
-    "picture": "https://s3.nahsi.dev/resume/photo.jpg",
+    "picture": "https://s3.nahsi.dev/resume/photo.png",
     "website": "https://nahsi.dev",
-    "summary": "Experienced Linux magician, workaholic, and a perfectionist with a passion for technology.\n\nI engineer, implement and maintain resilient highly available infrastructures (cloud and on-premise) using open-source tools and the very best of practices. I'm a big HashiCorp fan and if you use and love Consul, Nomad, Vault or Terraform like I do we will become friends ♥\n\nI'm also a Gentooman and have a homelab of 6 gentoo boxes running in 3 DC managed by Ansible.\n\nI'm looking to become a better programmer and feel genuinely excited about the possibility of writing in golang or rust in my work time.",
+    "summary": "Experienced Linux magician, workaholic, and a perfectionist with a passion for technology.\n\nI engineer, implement and maintain resilient highly available infrastructures (cloud and on-premise) using open-source tools and the very best of practices.\n\nHashiCorp and Grafana Labs fanboy ♥ I'm also a Gentooman and a proud owner of a homelab of 4 Gentoo boxes managed by Ansible.\n\nI'm looking to become a better programmer and feel genuinely excited about the possibility of writing in Golang or/and Rust in my work time.",
     "email": "hello@nahsi.dev",
     "location": {
       "city": "Kazan",
@@ -35,15 +35,15 @@
       "position": "DevOps/SRE",
       "website": "https://cinarra.com",
       "startDate": "2019-05-15",
-      "summary": "Big Data analytics for the third biggest telecom provider in Japan (location based advertisement).\n\nAntiquated infrastructure **refactoring** in the cloud (AWS) and in an on-premise environment (~100 very beefy hosts) with no direct access.\n\nI've joined Cinarra as a junior DevOps and snowballed into a Super Start in 3 years, thanks to the incredible, talented Cinarra folks and unique challenges Softbank provided.\n\nI gave back.\n\nDuring my time in Cinarra, DevOps team implemented:",
+      "summary": "Big Data analytics for the third biggest telecom provider in Japan (location based advertisement).\n\nAntiquated infrastructure **refactoring** in the cloud (AWS) and in an on-premise environment (~100 very beefy hosts) with no direct access.\n\nI've joined Cinarra as a junior DevOps and snowballed into a Super Start in 3 years, thanks to the incredible, talented Cinarra folks and unique challenges SoftBank provided.\n\nI gave back. Cinarra gained a modern, scalable, highly available and resilient infrastructure with best in class monitoring, configuration in code and automatic deployments.\n\nDuring my time in Cinarra, I've implemented:",
       "highlights": [
         "Infrastructure as a code using Ansible, Packer, Nomad and Terraform",
-        "Containerization",
-        "Service discovery with Consul - DNS load-balancing",
-        "Observability with VictoriaMetrics and Grafana Loki - metric and logs in one place with almost zero operational costs",
-        "CI/CD with GitHub Actions using self-hosted runners",
-        "Personal PR based dev environment that everyone can use",
-        "Secret management with Vault - short lived unique credentials, policy based access and painless mTLS"
+        "Containerization - transformation from legacy infrastructure with zero container usage to full containerization",
+        "Service discovery, DNS load-balancing and a Service Mesh with Consul",
+        "Observability with VictoriaMetrics and Grafana Loki - metrics and logs in one place with almost zero operational costs",
+        "CI/CD with GitHub Actions using self-hosted workers",
+        "Secret management, short lived unique credentials, policy based access and painless mTLS with Vault",
+        "Personal PR based DEV environment that everyone can use"
       ]
     },
     {
@@ -87,8 +87,10 @@
       "name": "Cloud",
       "keywords": [
         "AWS",
+        "Vultr",
         "Linode",
-        "HashiStack"
+        "DigitalOcean",
+        "HashiStack (Consul, Nomad, Vault)"
       ]
     },
     {
@@ -101,10 +103,22 @@
       ]
     },
     {
-      "name": "(Sorta) databases",
+      "name": "Databases",
       "keywords": [
         "ClickHouse",
+        "PostgreSQL",
+        "Redis/KeyDB",
         "Apache Kafka"
+      ]
+    },
+    {
+      "name": "Storage",
+      "keybords": [
+        "Ceph",
+        "ZFS",
+        "SeaweedFS",
+        "Minio",
+        "CSI"
       ]
     },
     {
@@ -112,8 +126,10 @@
       "keywords": [
         "Grafana",
         "Prometheus",
-        "VictoriaMetrics",
         "Loki",
+        "Mimir",
+        "VictoriaMetrics",
+        "Alertmanager",
         "Telegraf"
       ]
     },
@@ -127,7 +143,8 @@
       "name": "Scripting",
       "keywords": [
         "bash",
-        "Ansible"
+        "Ansible",
+        "python"
       ]
     },
     {
@@ -141,13 +158,13 @@
     {
       "name": "Misc",
       "keywords": [
+        "Vault",
         "Traefik",
         "Docker/Podman",
-        "ZFS",
+        "Mail stack (WildDuck)",
         "Vagrant",
-        "Deno",
         "mTLS",
-        "Shift Left/Zero Trust"
+        "Ubiquiti"
       ]
     },
     {
@@ -170,6 +187,10 @@
     },
     {
       "language": "Japanese",
+      "fluency": "Basic"
+    },
+    {
+      "language": "Latin",
       "fluency": "Lower Intermediate"
     }
   ],
@@ -192,7 +213,8 @@
       "name": "Languages",
       "keywords": [
         "Language acquisition",
-        "Romance and Germanic languages"
+        "Ancient languages",
+        "Romance languages"
       ]
     },
     {
@@ -200,13 +222,6 @@
       "keywords": [
         "Britcoms",
         "Old movies"
-      ]
-    },
-    {
-      "name": "Sport",
-      "keywords": [
-        "Swimming",
-        "Fitness"
       ]
     }
   ]
