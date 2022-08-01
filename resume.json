@@ -113,7 +113,7 @@
     },
     {
       "name": "Storage",
-      "keybords": [
+      "keywords": [
         "Ceph",
         "ZFS",
         "SeaweedFS",
