@@ -7,9 +7,9 @@
     "summary": "Experienced Linux magician, workaholic, and a perfectionist with a passion for technology.\n\nI engineer, implement and maintain resilient highly available infrastructures (cloud and on-premise) using open-source tools and the very best of practices.\n\nHashiCorp and Grafana Labs fanboy ♥ I'm also a Gentooman and a proud owner of a homelab of 4 Gentoo boxes managed by Ansible.\n\nI'm looking to become a better programmer and feel genuinely excited about the possibility of writing in Golang or/and Rust in my work time.",
     "email": "hello@nahsi.dev",
     "location": {
-      "city": "Kazan",
-      "countryCode": "RU",
-      "region": "Tatarstan"
+      "city": "Thessaloniki",
+      "countryCode": "GR",
+      "region": "Greece"
     },
     "profiles": [
       {
@@ -43,7 +43,7 @@
       "summary": "Managing my own quite advanced homelab/self-hosting Gentoo based infrastructure.",
       "highlights": [
         "Getting my hands dirty with hardware and networking",
-        "Playing with distributed storage (~50 TB in Ceph now)",
+        "Playing with distributed storage",
         "Making myself free of evil data collecting corporations",
         "Crying when my self-hosted mail server died and I can't function because of that"
       ]
